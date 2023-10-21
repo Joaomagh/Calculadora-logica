@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Lógica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="all">
+        <h1>Calculadora Lógica</h1>
+        <div class="input-container">
+            <label for="formula">Fórmula Lógica:</label>
+            <input type="text" id="formula" placeholder="Digite a fórmula aqui">
+        </div>
+        <div class="symbol-buttons">
+            <button id="apagar">Apagar</button>
+            <button id="a">A</button>
+            <button id="b">B</button>
+            <button id="c">C</button>
+            <button id="parentheses1">(</button>
+            <button id="parentheses2">)</button>
+            <button id="negation">∼</button>
+            <button id="conjunction">^</button>
+            <button id="disjunction">v</button>
+            <button id="conditional">→</button>
+            <button id="biconditional">↔</button>
+            <button id="exclusive-or">⊕</button>
+        </div>
+        <button id="verify">Verificar</button>
+        <button id="verificarTautologia">Verificar Tautologia</button>
+        <div class="output" id="output"></div>
+    </div>
+
+
+    <table id="tabela_tautologia" class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">A</th>
+            <th scope="col">B</th>
+            <th id="nome_operacao" scope="col">A e B</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="linha1">
+            <td id="a1"></td>
+            <td id="b1"></td>
+            <td id="c1"></td>
+          </tr>
+          <tr id="linha2">
+            <td id="a2"></td>
+            <td id="b2"></td>
+            <td id="c2"></td>
+          </tr>
+          <tr id="linha3">
+            <td id="a3"></td>
+            <td id="b3"></td>
+            <td id="c3"></td>
+          </tr>
+          <tr id="linha4">
+            <td id="a4"></td>
+            <td id="b4"></td>
+            <td id="c4"></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <script src="logic.js"></script>
+    <script src="provador_tautologia.js"></script>
+</body>
+</html>
